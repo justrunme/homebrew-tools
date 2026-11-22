@@ -29,6 +29,6 @@ class Blastguard < Formula
   end
 
   test do
-    assert_match "BlastGuard", shell_output("#{bin}/blastguard 2>&1")
+    assert_match "BlastGuard", shell_output("#{bin}/blastguard 2>&1", 2)
   end
 end
